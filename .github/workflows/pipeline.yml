@@ -22,3 +22,4 @@ jobs:
       gcp_location: ${{ vars.GCP_LOCATION }}
       gitops_repo: ${{ vars.GITOPS_REPO }}
       #gitops_values_path: ${{ vars.GITOPS_VALUES_PATH }}
+    secrets: inherit

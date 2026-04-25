@@ -13,7 +13,6 @@ permissions:
 jobs:
   pipeline:
     uses: theSamsCo/central-workflows/.github/workflows/pipeline.yaml@v1
-    secrets: inherit
     with:
       env: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
       app_name: spi-api-1
@@ -22,4 +21,4 @@ jobs:
       gcp_project_id: ${{ vars.GCP_PROJECT_ID }}
       gcp_location: ${{ vars.GCP_LOCATION }}
       gitops_repo: ${{ vars.GITOPS_REPO }}
-      gitops_values_path: ${{ vars.GITOPS_VALUES_PATH }}
+      #gitops_values_path: ${{ vars.GITOPS_VALUES_PATH }}

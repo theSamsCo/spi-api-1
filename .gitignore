@@ -1,0 +1,24 @@
+# Binaries
+*.exe
+*.out
+bin/
+
+# Module cache / dependency directories
+vendor/
+node_modules/
+
+# Build artefacts
+dist/
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Environment files — never commit secrets
+.env
+.env.*
+!.env.example
